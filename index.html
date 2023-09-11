@@ -17,31 +17,70 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <ul class="header-list">
-          <li class="header-list-item">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-checkmark"></use>
-            </svg>
-            <p class="header-list-text">Доставка по Україні</p>
-          </li>
-          <li class="header-list-item">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-checkmark"></use>
-            </svg>
-            <p class="header-list-text">Обмежена пропозиція</p>
-          </li>
-          <li class="header-list-item">
-            <svg width="40" height="40">
-              <use href="./images/icons.svg#icon-checkmark"></use>
-            </svg>
-            <p class="header-list-text">Оплата при отриманні</p>
-          </li>
-        </ul>
+    <div class="container">
+      <!-- header-->
+      <ul class="header-list">
+        <li class="header-list-item">
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-checkmark"></use>
+          </svg>
+          <p class="header-list-text">Доставка по Україні</p>
+        </li>
+        <li class="header-list-item">
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-checkmark"></use>
+          </svg>
+          <p class="header-list-text">Обмежена пропозиція</p>
+        </li>
+        <li class="header-list-item">
+          <svg width="30" height="30">
+            <use href="./images/icons.svg#icon-checkmark"></use>
+          </svg>
+          <p class="header-list-text">Оплата при отриманні</p>
+        </li>
+      </ul>
+      <!-- / header-->
+      <!-- image -->
+      <img src="./images/fon1.jpg" alt="hair-dryer" class="main-photo" />
+      <!-- / image -->
+      <!-- price -->
+      <div class="price">
+        <div class="old-price">
+          <p class="old-price-text">Стара ціна:</p>
+          <span class="old-price-sum">
+            <span class="old-price-through">1025</span> ГРН
+          </span>
+          <!-- <span class="old-price-hrn"></span> -->
+        </div>
+        <div class="today-price">
+          <p class="today-price-text">Ціна сьогодні:</p>
+          <span class="today-price-sum">625 ГРН</span>
+        </div>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
+      <!-- / price -->
+      <!-- timer -->
+      <div class="timer">
+        <h4 class="timer-header">Акція закінчиться через:</h4>
+        <div class="timer-box">
+          <div class="time-box">
+            <span class="hours time">07</span>
+            <span class="time-box-text">годин</span>
+          </div>
+          <div class="time-box">
+            <span class="minutes time">27</span>
+            <span class="time-box-text">хвилин</span>
+          </div>
+          <div class="time-box">
+            <span class="seconds time">34</span>
+            <span class="time-box-text">секунд</span>
+          </div>
+        </div>
+      </div>
+      <!-- / timer -->
+      <!-- order -->
+      <a href="#order" class="order-link">ЗАМОВИТИ ЗІ ЗНИЖКОЮ</a>
+      <!-- order -->
+    </div>
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>

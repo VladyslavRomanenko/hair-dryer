@@ -33,16 +33,15 @@ address {
 }
 
 body {
-  background-color: #ff54b5;
+  /* background-color: #e30b5d; */
   font-family: "Montserrat", sans-serif;
   margin: auto;
 }
 
 .container {
-  width: 375px;
+  min-width: 320px;
   margin: 0 auto;
-  padding: 10px;
-  background-color: #fafafa;
+  text-align: center;
 }
 
 /* ================= HEADER ================= */
@@ -56,14 +55,131 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+  background-color: #b91d6e;
+  gap: 7px;
 }
 
 .header-list-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3px;
 }
 
 .header-list-text {
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
 }
+
+/* -------------- image --------------- */
+
+.main-photo {
+  margin: 0 auto;
+}
+
+/* -------------- image --------------- */
+
+/* -------------- price --------------- */
+.price {
+  display: flex;
+  margin: 0 auto;
+}
+
+.old-price {
+  background-color: rgb(219, 219, 219);
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.old-price-text {
+  margin-bottom: 7px;
+}
+
+.old-price-sum {
+  font-size: 22px;
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+.old-price-through {
+  text-decoration: line-through;
+}
+
+.today-price {
+  background-color: #b91d6e;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+.today-price-text {
+  margin-bottom: 7px;
+}
+
+.today-price-sum {
+  font-size: 22px;
+  font-weight: 600;
+}
+/* -------------- price --------------- */
+
+/* --------------- timer ------------ */
+.timer {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.timer-header {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.timer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #b91d6e, transparent);
+}
+
+.time {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.time-box-text {
+  font-size: 12px;
+}
+/* --------------- / timer ------------ */
+
+/* ------------ order link  -------- */
+.order-link {
+  display: inline-block;
+  margin: 50px;
+  padding: 20px 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin: auto;
+  background-color: #e93994;
+  box-shadow: 2px 2px 2px 2px grey;
+}
+
+/* ------------ / order link  -------- */
