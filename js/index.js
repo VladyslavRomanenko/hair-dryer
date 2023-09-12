@@ -40,6 +40,8 @@ timerElements.forEach(function (timerElement) {
 // ----------- form -------- //
 
 const formRef = document.querySelector(".form");
+const backDrop = document.querySelector(".backdrop");
+const backBtn = document.querySelector(".thanks-link");
 
 formRef.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -47,12 +49,22 @@ formRef.addEventListener("submit", function (event) {
   const name = formRef.elements.name.value;
   const phone = formRef.elements.phone.value;
 
-  if (phone.length < 10) {
+  if (phone.length < 10 || phone.length > 12) {
     alert("Введіть коректно номер телефону");
+  } else {
+    formRef.reset();
+    console.log("Ім'я: " + name);
+    console.log("Телефон: " + phone);
+    backDrop.classList.remove("is-hidden");
   }
+});
 
-  console.log("Ім'я: " + name);
-  console.log("Телефон: " + phone);
+backBtn.addEventListener("click", () => {
+  backDrop.classList.add("is-hidden");
+});
 
-  // formRef.reset();
+backDrop.addEventListener("click", (event) => {
+  if (event.target === backDrop) {
+    backDrop.classList.add("is-hidden");
+  }
 });
