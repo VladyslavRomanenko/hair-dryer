@@ -33,7 +33,7 @@ address {
 }
 
 body {
-  /* background-color: #e30b5d; */
+  background-color: rgb(240, 240, 240);
   font-family: "Montserrat", sans-serif;
   margin: auto;
 }
@@ -41,7 +41,6 @@ body {
 .container {
   min-width: 320px;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* ================= HEADER ================= */
@@ -132,9 +131,8 @@ body {
 
 /* --------------- timer ------------ */
 .timer {
-  padding: 30px;
+  padding: 20px;
   text-align: center;
-  background-color: #fff;
 }
 
 .timer-header {
@@ -169,6 +167,11 @@ body {
 /* --------------- / timer ------------ */
 
 /* ------------ order link  -------- */
+.order-link-btn {
+  text-align: center;
+  padding: 20px 0px 5px;
+}
+
 .order-link {
   display: inline-block;
   margin: 50px;
@@ -180,6 +183,125 @@ body {
   margin: auto;
   background-color: #e93994;
   box-shadow: 2px 2px 2px 2px grey;
+  margin-bottom: 20px;
+}
+
+.order-link-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(100, 2, 100);
 }
 
 /* ------------ / order link  -------- */
+
+/* ------------- video ----------- */
+.video {
+  width: 100%;
+}
+/* ------------- / video ----------- */
+
+/* --------- advantages --------*/
+.advantages {
+  padding: 20px 10px 0px;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-list-item {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: white;
+  position: relative;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.advantages-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  fill: #b91d6e;
+  top: 50%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+}
+
+.advantages-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* --------- / advantages --------*/
+
+/* ---------- information ----- */
+
+.information {
+  padding: 20px 0px;
+}
+
+.information-header {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #b91d6e;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.information-header-black {
+  color: #333;
+}
+
+.information-img {
+  width: 100%;
+}
+
+.information-list {
+  margin: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.information-list-item {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* ---------- / information ----- */
+
+/* characteristics */
+
+.characteristics {
+  background-color: rgb(11, 98, 107);
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.characteristics-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.characteristics-list {
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.characteristics-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  text-align: left;
+}
+
+.characteristics-text {
+  width: 120px;
+}
