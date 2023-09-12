@@ -43,6 +43,10 @@ const formRef = document.querySelector(".form");
 const backDrop = document.querySelector(".backdrop");
 const backBtn = document.querySelector(".thanks-link");
 
+const TOKEN = "6550736884:AAHCUGBNoVfbdOki4yPaK1VYwWkhmQo6V9w";
+const CHAT_ID = "-1001944530488";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
 formRef.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -52,9 +56,23 @@ formRef.addEventListener("submit", function (event) {
   if (phone.length < 10 || phone.length > 12) {
     alert("Введіть коректно номер телефону");
   } else {
-    formRef.reset();
-    console.log("Ім'я: " + name);
-    console.log("Телефон: " + phone);
+    let message = `<b>Нова заявка!</b>\n`;
+    message += `<b>Ім'я: </b> ${name}\n`;
+    message += `<b>Номер телефону: </b> ${phone}\n`;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: message,
+      })
+      .then(() => {
+        formRef.reset();
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+
     backDrop.classList.remove("is-hidden");
   }
 });
