@@ -56,7 +56,7 @@ formRef.addEventListener("submit", function (event) {
   if (phone.length < 10 || phone.length > 12) {
     alert("Введіть коректно номер телефону");
   } else {
-    let message = `<b>Нова заявка!</b>\n`;
+    let message = `<b>Заявка стайлер!</b>\n`;
     message += `<b>Ім'я: </b> ${name}\n`;
     message += `<b>Номер телефону: </b> ${phone}\n`;
 
