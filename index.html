@@ -372,6 +372,7 @@
             type="text"
             placeholder="Введіть Ваше ім'я"
             required
+            name="name"
           />
           <input
             class="form-input"
@@ -379,6 +380,7 @@
             placeholder="Введіть Ваш телефон"
             minlength="10"
             required
+            name="phone"
           />
           <button type="submit" class="order-submit">ЗАМОВИТИ ЗАРАЗ</button>
         </form>
@@ -394,6 +396,15 @@
         <a href="./files/off.pdf" target="_blank" class="politic-link"
           >Публічна оферта</a
         >
+      </div>
+    </div>
+    <div class="backdrop is-hidden">
+      <div class="thanks">
+        <h2 class="thanks-title">Дякуємо за замовлення!</h2>
+        <p class="thanks-title">
+          Наш менеджер скоро зв'яжеться з Вами! Очікуйте на дзвінок!
+        </p>
+        <a class="thanks-link">Повернутись назад</a>
       </div>
     </div>
     <script src="./js/index.js" type="module"></script>

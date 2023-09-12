@@ -1,3 +1,4 @@
+// --------------------  timer -----------------//
 function startTimer(timerElement) {
   const hoursElement = timerElement.querySelector(".hours");
   const minutesElement = timerElement.querySelector(".minutes");
@@ -34,4 +35,24 @@ function startTimer(timerElement) {
 const timerElements = document.querySelectorAll(".timer");
 timerElements.forEach(function (timerElement) {
   startTimer(timerElement);
+});
+
+// ----------- form -------- //
+
+const formRef = document.querySelector(".form");
+
+formRef.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = formRef.elements.name.value;
+  const phone = formRef.elements.phone.value;
+
+  if (phone.length < 10) {
+    alert("Введіть коректно номер телефону");
+  }
+
+  console.log("Ім'я: " + name);
+  console.log("Телефон: " + phone);
+
+  // formRef.reset();
 });
