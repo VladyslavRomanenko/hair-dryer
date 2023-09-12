@@ -401,7 +401,7 @@ body {
   flex-direction: column;
   gap: 20px;
   max-width: 300px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .form-input {
@@ -420,4 +420,18 @@ body {
   font-weight: 600;
   font-size: 20px;
 }
-/* ---------- order -------- */
+/* ----------/ order -------- */
+
+/* ---------- politic ----------- */
+.politic {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  gap: 15px;
+}
+
+.politic-link {
+  text-decoration: underline;
+  font-size: 12px;
+}

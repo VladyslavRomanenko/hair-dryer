@@ -1,8 +1,7 @@
-function startTimer() {
-  const timerElement = document.querySelector(".timer");
-  const hoursElement = document.querySelector(".hours");
-  const minutesElement = document.querySelector(".minutes");
-  const secondsElement = document.querySelector(".seconds");
+function startTimer(timerElement) {
+  const hoursElement = timerElement.querySelector(".hours");
+  const minutesElement = timerElement.querySelector(".minutes");
+  const secondsElement = timerElement.querySelector(".seconds");
 
   let hours = 7;
   let minutes = 27;
@@ -32,4 +31,7 @@ function startTimer() {
   }, 1000);
 }
 
-startTimer();
+const timerElements = document.querySelectorAll(".timer");
+timerElements.forEach(function (timerElement) {
+  startTimer(timerElement);
+});
