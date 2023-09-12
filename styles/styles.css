@@ -18,6 +18,7 @@ button {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -45,8 +46,20 @@ body {
 }
 
 .container {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 374.98px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 767.98px;
+  }
 }
 
 /* ================= HEADER ================= */
@@ -79,6 +92,30 @@ body {
   color: white;
 }
 
+.header-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    padding: 20px;
+    justify-content: space-around;
+  }
+
+  .header-list-item {
+    gap: 10px;
+  }
+
+  .header-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-list-text {
+    font-size: 16px;
+  }
+}
 /* -------------- image --------------- */
 
 .main-photo {
@@ -133,6 +170,24 @@ body {
   font-size: 22px;
   font-weight: 600;
 }
+
+@media screen and (min-width: 768px) {
+  .old-price {
+    padding: 15px;
+  }
+
+  .old-price-sum {
+    font-size: 28px;
+  }
+
+  .today-price {
+    padding: 15px;
+  }
+
+  .today-price-sum {
+    font-size: 28px;
+  }
+}
 /* -------------- price --------------- */
 
 /* --------------- timer ------------ */
@@ -170,6 +225,32 @@ body {
 .time-box-text {
   font-size: 12px;
 }
+
+@media screen and (min-width: 768px) {
+  .timer {
+    padding: 35px;
+  }
+
+  .timer-header {
+    font-size: 22px;
+  }
+
+  .timer-box {
+    gap: 20px;
+  }
+
+  .time-box {
+    padding: 20px;
+  }
+
+  .time {
+    font-size: 35px;
+  }
+
+  .time-box-text {
+    font-size: 15px;
+  }
+}
 /* --------------- / timer ------------ */
 
 /* ------------ order link  -------- */
@@ -188,8 +269,13 @@ body {
   font-weight: 600;
   margin: auto;
   background-color: #e93994;
-  box-shadow: 2px 2px 2px 2px grey;
   margin-bottom: 20px;
+  transition: background-color 250ms linear;
+}
+
+.order-link:hover,
+.order-link:focus {
+  background-color: #a20f5b;
 }
 
 .order-link-text {
@@ -200,6 +286,17 @@ body {
 
 .order-link-text-color {
   color: #b91d6e;
+}
+
+@media screen and (min-width: 768px) {
+  .order-link {
+    font-size: 22px;
+    padding: 25px 20px;
+  }
+
+  .order-link-text {
+    font-size: 17px;
+  }
 }
 
 /* ------------ / order link  -------- */
@@ -243,6 +340,25 @@ body {
   font-weight: 600;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding: 30px 50px;
+  }
+
+  .advantages-list-item {
+    padding: 25px;
+  }
+
+  .advantages-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .advantages-text {
+    font-size: 23px;
+  }
+}
+
 /* --------- / advantages --------*/
 
 /* ---------- information ----- */
@@ -278,6 +394,21 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .information-header {
+    font-size: 28px;
+  }
+
+  .information-list {
+    gap: 25px;
+    margin: 30px 10px;
+  }
+
+  .information-list-item {
+    font-size: 22px;
+  }
 }
 /* ---------- / information ----- */
 
@@ -315,6 +446,21 @@ body {
   width: 120px;
 }
 
+@media screen and (min-width: 768px) {
+  .characteristics {
+    padding: 40px 20px;
+  }
+
+  .characteristics-list {
+    margin: 40px 20px 60px;
+  }
+
+  .characteristics-text {
+    width: 35%;
+    font-size: 22px;
+  }
+}
+
 /* ---------- review  -------*/
 .reviews {
   padding: 20px 10px;
@@ -331,6 +477,20 @@ body {
   border-radius: 15px;
   margin-bottom: 25px;
   box-shadow: 3px 3px 3px 3px rgb(205, 205, 205);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 30px 0px;
+  }
+  .reviews-title {
+    margin-bottom: 35px;
+  }
+  .review-img {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 /* ---------- / review  -------*/
@@ -382,8 +542,35 @@ body {
   font-size: 15px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -170%);
+  transform: translate(-50%, -150%);
   border: 1px solid white;
+}
+
+@media screen and (min-width: 768px) {
+  .how-list {
+    max-width: 600px;
+  }
+
+  .how-list-item {
+    padding: 20px;
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+
+  .how-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .how-text {
+    font-size: 18px;
+  }
+
+  .how-number {
+    transform: translate(-50%, -190%);
+    font-size: 18px;
+    padding: 5px 11px;
+  }
 }
 
 /* ----------- / how to order ------ */
@@ -425,6 +612,24 @@ body {
   border-radius: 25px;
   font-weight: 600;
   font-size: 20px;
+  transition: background-color 250ms linear;
+}
+
+.order-submit:hover,
+.order-submit:focus {
+  background-color: #850045;
+  box-shadow: 2px 2px 5px rgb(204, 204, 204);
+}
+
+@media screen and (min-width: 768px) {
+  .form-box {
+    padding: 30px 20px;
+  }
+
+  .form {
+    max-width: 500px;
+    gap: 30px;
+  }
 }
 /* ----------/ order -------- */
 
@@ -478,4 +683,21 @@ body {
   font-weight: 500;
   padding: 10px 15px;
   border-radius: 25px;
+  transition: background-color 250ms linear;
+}
+
+.thanks-link:hover,
+.thanks-link:focus {
+  background-color: #92054e;
+}
+
+@media screen and (min-width: 768px) {
+  .thanks {
+    padding: 30px 25px;
+    gap: 25px;
+  }
+
+  .thanks-link {
+    padding: 15px 30px;
+  }
 }
