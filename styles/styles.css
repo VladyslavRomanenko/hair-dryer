@@ -605,6 +605,10 @@ body {
   font-size: 20px;
 }
 
+.input-address::placeholder {
+  font-size: 16px;
+}
+
 .order-submit {
   background-color: #b91d6e;
   padding: 20px;

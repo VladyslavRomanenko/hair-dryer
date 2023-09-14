@@ -52,6 +52,7 @@ formRef.addEventListener("submit", function (event) {
 
   const name = formRef.elements.name.value;
   const phone = formRef.elements.phone.value;
+  const address = formRef.elements.address.value;
 
   if (phone.length < 10 || phone.length > 12) {
     alert("Введіть коректно номер телефону");
@@ -59,6 +60,7 @@ formRef.addEventListener("submit", function (event) {
     let message = `<b>Заявка стайлер!</b>\n`;
     message += `<b>Ім'я: </b> ${name}\n`;
     message += `<b>Номер телефону: </b> ${phone}\n`;
+    message += `<b>Адреса доставки: </b> ${address}\n`;
 
     axios
       .post(URI_API, {
